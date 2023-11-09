@@ -56,7 +56,6 @@ app.post("/verify-otp", (req, res) => {
   // Log the received OTP
   console.log("User entered OTP:", userEnteredOTP);
 
-  // Periksa apakah secrets[phoneNumber] terdefinisi
   if (secrets[phoneNumber]) {
     const storedSecret = secrets[phoneNumber].secret;
 

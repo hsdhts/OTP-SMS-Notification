@@ -1,7 +1,7 @@
 function sendOTP() {
   const phoneNumber = document.getElementById("phoneNumber").value;
 
-  // Kirim permintaan HTTP ke backend untuk mengirim OTP
+  // permintaan HTTP ke backend untuk mengirim OTP
   fetch("http://localhost:3000/send-otp", {
     method: "POST",
     headers: {
@@ -31,7 +31,7 @@ function verifyOTP() {
   
     console.log('Verifying OTP:', userEnteredOTP);
   
-    // Kirim permintaan HTTP ke backend untuk verifikasi OTP
+    //permintaan HTTP ke backend untuk verifikasi OTP
     fetch("http://localhost:3000/verify-otp", {
       method: "POST",
       headers: {
